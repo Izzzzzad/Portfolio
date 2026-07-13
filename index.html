@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamad Izzad | Cyberpunk Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">MOHAMAD<span> IZZAD</span></a>
+            <div class="nav-links">
+                <a href="#home" class="nav-item">Home</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#tech" class="nav-item">Technologies</a>
+                <a href="#education" class="nav-item">Education</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </div>
+            
+            <div class="nav-controls">
+                <button id="theme-toggle" class="btn-theme" title="Toggle Theme">🌙</button>
+                <select id="lang-switch" class="lang-dropdown">
+                    <option value="en">EN</option>
+                    <option value="bm">BM</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-container fade-in">
+            <div class="hero-content">
+                <span class="hero-tagline" data-en="// DEAN'S LIST COMPUTER SCIENCE STUDENT" data-bm="// PELAJAR SAINS KOMPUTER SENARAI DEKAN">// DEAN'S LIST COMPUTER SCIENCE STUDENT</span>
+                <h1 class="hero-title">Izzad<br>Hasli</h1>
+                <p class="hero-subtitle" data-en="SYSTEM DEVELOPMENT & NETWORK ADMINISTRATION" data-bm="PEMBANGUNAN SISTEM & PENTADBIRAN RANGKAIAN">SYSTEM DEVELOPMENT & NETWORK ADMINISTRATION</p>
+                
+                <div class="hero-actions">
+                    <!-- Target download points to your resume document -->
+                    <a href="resume.pdf" class="btn-primary" download>
+                        <span data-en="📄 Download Resume" data-bm="📄 Muat Turun Resume">📄 Download Resume</span>
+                    </a>
+                    <a href="#contact" class="btn-outline-small" data-en="Secure Intern" data-bm="Hubungi Saya">Secure Intern</a>
+                </div>
+            </div>
+            <div class="hero-image-pane">
+                <div class="image-frame">
+                    <img src="ggin.png" alt="Mohamad Izzad">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. About Me Section -->
+    <section class="section scroll-reveal" id="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="title-wrapper">
+                    <span class="section-number">01.</span>
+                    <h2 class="section-title" data-bg-text="SUMMARY" data-en="Professional Summary" data-bm="Ringkasan Profesional">Professional Summary</h2>
+                </div>
+            </div>
+            <div class="about-box">
+                <p class="lead" data-en="A high-achieving Computer Science student from UiTM Tapah with a consistent Dean's List (GPA 3.5+) track record." data-bm="Pelajar Sains Komputer berprestasi tinggi dari UiTM Tapah dengan rekod prestasi Senarai Dekan (GPA 3.5+) yang konsisten.">A high-achieving Computer Science student from UiTM Tapah with a consistent Dean's List (GPA 3.5+) track record.</p>
+                <p class="bio-text" data-en="Proficient in System Development and Network Administration, with a solid technical foundation in Object-Oriented Programming (Java/C++) and Database Management. Possesses a keen interest in Multimedia and visual programming. A fast learner with strong logical thinking, seeking to apply analytical problem-solving skills during the 2026/2027 industrial training period." data-bm="Mahir dalam Pembangunan Sistem dan Pentadbiran Rangkaian, dengan asas teknikal yang kukuh dalam Pengaturcaraan Berorientasikan Objek (Java/C++) dan Pengurusan Pangkalan Data. Mempunyai minat yang mendalam dalam Multimedia dan pengaturcaraan visual. Seorang yang cepat belajar dengan pemikiran logik yang kuat, ingin mengaplikasikan kemahiran penyelesaian masalah analitikal sepanjang tempoh latihan industri 2026/2027.">
+                    Proficient in System Development and Network Administration, with a solid technical foundation in Object-Oriented Programming (Java/C++) and Database Management. Possesses a keen interest in Multimedia and visual programming. A fast learner with strong logical thinking, seeking to apply analytical problem-solving skills during the 2026/2027 industrial training period.
+                </p>
+                
+                <div class="edu-stats" style="margin-top: 25px;">
+                    <div class="stat-badge"><strong data-en="Internship Window:" data-bm="Tetingkap Latihan Industri:">Internship Window:</strong> 7 Sept 2026 - 19 Feb 2027</div>
+                    <div class="stat-badge"><strong data-en="Duration:" data-bm="Tempoh:">Duration:</strong> 24 Weeks</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Technical Skills Section with Live Search -->
+    <section class="section alt-bg scroll-reveal" id="skills">
+        <div class="container">
+            <div class="section-header search-header-layout">
+                <div class="title-wrapper">
+                    <span class="section-number">02.</span>
+                    <h2 class="section-title" data-bg-text="SKILLS" data-en="Core Skillsets" data-bm="Kemahiran Teras">Core Skillsets</h2>
+                </div>
+                <div class="search-box-container">
+                    <input type="text" id="skill-search" placeholder="Search parameters... / Cari kemahiran...">
+                </div>
+            </div>
+
+            <div class="skills-grid" id="skills-container">
+                <!-- Category 1: Highlighted Main Track -->
+                <div class="skill-card highlighted">
+                    <div class="card-icon">💻</div>
+                    <h3 data-en="Systems Dev" data-bm="Pembangunan Sistem">Systems Dev</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">Object-Oriented Programming</li>
+                        <li class="skill-item">Java Core Engine</li>
+                        <li class="skill-item">C++ Frameworks</li>
+                        <li class="skill-item">Web & Mobile Application</li>
+                        <li class="skill-item">Visual Programming (GUI)</li>
+                    </ul>
+                </div>
+                <!-- Category 2 -->
+                <div class="skill-card">
+                    <div class="card-icon">🗄️</div>
+                    <h3 data-en="Data Infrastructure" data-bm="Infrastruktur Data">Data Infrastructure</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">SQL Database Management</li>
+                        <li class="skill-item">Relational Database Design</li>
+                        <li class="skill-item">Data Integrity Validation</li>
+                        <li class="skill-item">Efficient Data Retrieval</li>
+                        <li class="skill-item">Data Structures & Algorithms</li>
+                    </ul>
+                </div>
+                <!-- Category 3 -->
+                <div class="skill-card">
+                    <div class="card-icon">🌐</div>
+                    <h3 data-en="Networks & OS" data-bm="Rangkaian & OS">Networks & OS</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">Data Communication</li>
+                        <li class="skill-item">Networking Protocols</li>
+                        <li class="skill-item">OSI Reference Layers</li>
+                        <li class="skill-item">Process & Memory Management</li>
+                        <li class="skill-item">Windows & Linux Diagnostics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Technologies I Use Section -->
+    <section class="section scroll-reveal" id="tech">
+        <div class="container">
+            <div class="section-header">
+                <div class="title-wrapper">
+                    <span class="section-number">03.</span>
+                    <h2 class="section-title" data-bg-text="TECH" data-en="Tech Stack Diagnostics" data-bm="Teknologi Digunakan">Tech Stack Diagnostics</h2>
+                </div>
+            </div>
+
+            <div class="tech-gallery">
+                <div class="tech-badge" title="Java">☕ <span>Java</span></div>
+                <div class="tech-badge" title="C++">⚙️ <span>C++</span></div>
+                <div class="tech-badge" title="SQL">📊 <span>SQL</span></div>
+                <div class="tech-badge" title="MySQL">🗄️ <span>MySQL</span></div>
+                <div class="tech-badge" title="Flutter">⚡ <span>Flutter</span></div>
+                <div class="tech-badge" title="Firebase">🔥 <span>Firebase</span></div>
+                <div class="tech-badge" title="GitHub">🐙 <span>GitHub</span></div>
+                <div class="tech-badge" title="Visual Studio">📝 <span>VS Code</span></div>
+                <div class="tech-badge" title="Android Studio">🤖 <span>Android Studio</span></div>
+                <div class="tech-badge" title="BlueJ">💎 <span>BlueJ</span></div>
+                <div class="tech-badge" title="Notepad++">✏️ <span>Notepad++</span></div>
+                <div class="tech-badge" title="Interactive Multimedia">🎨 <span>Multimedia</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Education Section -->
+    <section class="section alt-bg scroll-reveal" id="education">
+        <div class="container">
+            <div class="section-header">
+                <div class="title-wrapper">
+                    <span class="section-number">04.</span>
+                    <h2 class="section-title" data-bg-text="ACADEMIA" data-en="Academic Profile" data-bm="Pendidikan">Academic Profile</h2>
+                </div>
+            </div>
+
+            <div class="education-block" style="margin-bottom: 30px;">
+                <div class="edu-header">
+                    <h3 data-en="Computer Science Program" data-bm="Program Sains Komputer">Computer Science Program</h3>
+                    <span class="edu-date">3x Dean's List</span>
+                </div>
+                <h4 class="edu-institution">Universiti Teknologi MARA (UiTM) Tapah, Perak</h4>
+                
+                <div class="edu-stats">
+                    <div class="stat-badge"><strong data-en="Cumulative GPA:" data-bm="GPA Himpunan:">Cumulative GPA:</strong> 3.81 / 4.00</div>
+                    <div class="stat-badge"><strong>Sem 1:</strong> 3.95</div>
+                    <div class="stat-badge"><strong>Sem 2:</strong> 3.68</div>
+                    <div class="stat-badge"><strong>Sem 3:</strong> 3.80</div>
+                </div>
+            </div>
+
+            <div class="education-block">
+                <div class="edu-header">
+                    <h3 data-en="Sijil Pelajaran Malaysia (SPM)" data-bm="Sijil Pelajaran Malaysia (SPM)">Sijil Pelajaran Malaysia (SPM)</h3>
+                    <span class="edu-date" style="color: var(--accent-pink); text-shadow: var(--pink-glow);">High Achiever</span>
+                </div>
+                <h4 class="edu-institution">Secondary Academic Board Evaluation</h4>
+                <div class="edu-stats">
+                    <div class="stat-badge"><strong data-en="Metrics Breakdown:" data-bm="Pecahan Keputusan:">Metrics Breakdown:</strong> 7A, 1B, 1C</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Contact Section -->
+    <section class="section scroll-reveal" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="title-wrapper">
+                    <span class="section-number">05.</span>
+                    <h2 class="section-title" data-bg-text="COMMS" data-en="Establish Uplink" data-bm="Hubungi Saya">Establish Uplink</h2>
+                </div>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Hardcoded Real Contact details directly from resume file arrays -->
+                <div class="contact-details-panel">
+                    <div class="contact-strip">
+                        <span class="strip-icon">✉️</span>
+                        <div>
+                            <h5>Email Gateway</h5>
+                            <a href="mailto:izzadhasli25@gmail.com">izzadhasli25@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-strip">
+                        <span class="strip-icon">📞</span>
+                        <div>
+                            <h5>Secure Comms Line</h5>
+                            <a href="tel:+601115838648">+60 11-15838648</a>
+                        </div>
+                    </div>
+                    <div class="contact-strip">
+                        <span class="strip-icon">📍</span>
+                        <div>
+                            <h5>Location Node</h5>
+                            <p>Ipoh, Perak, Malaysia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Functional Interface Forms -->
+                <form class="contact-form-block" onsubmit="event.preventDefault(); alert('Transmission encrypted and sent!');">
+                    <div class="form-row">
+                        <input type="text" placeholder="Corporate Name" required>
+                        <input type="email" placeholder="Return Email Address" required>
+                    </div>
+                    <textarea placeholder="Enter secure transmission message details here..." rows="5" required></textarea>
+                    <button type="submit" class="btn-primary" data-en="Deploy Transmission" data-bm="Hantar Mesej">Deploy Transmission</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Area -->
+    <footer>
+        <p>&copy; 2026 Mohamad Izzad Bin Mohamad Hasli. All terminal systems operational.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
